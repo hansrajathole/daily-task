@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.parent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        padding: 0.5em 1em;
+        font-size: 2em;
+        background-color:salmon;
+        border-radius: 1em;
+        border: none;
+        cursor: pointer;
+        transition: all ease;
+
+        &:active{
+            transform: scale(0.8);
+        }
+    }
+}

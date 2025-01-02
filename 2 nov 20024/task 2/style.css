@@ -1,0 +1,35 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 3rem;
+  border-bottom: 1px solid #000;
+}
+.parent h2 {
+  font-size: 3em;
+}
+.parent h3 {
+  font-weight: 400;
+  color: #777;
+}
+.parent img {
+  width: 200px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all ease 0.2s;
+}/*# sourceMappingURL=style.css.map */
