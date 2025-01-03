@@ -119,24 +119,21 @@ const products = [
 dataFun();
 
 
-// Search functionality
 let search = document.querySelector(".search");
 
 search.addEventListener("keyup", () => {
     const searchQuery = search.value.toLowerCase();
-    
-    // Get all product divs
     const productDivs = document.querySelectorAll(".product");
 
     productDivs.forEach((productDiv) => {
         const productName = productDiv.querySelector(".name p").textContent.toLowerCase();
         const productDescription = productDiv.querySelector(".detail p").textContent.toLowerCase();
         
-        // Check if either the name or description contains the search query
+        
         if (productName.includes(searchQuery) || productDescription.includes(searchQuery)) {
-            productDiv.style.display = "block"; // Show the product
+            productDiv.style.display = "block"; 
         } else {
-            productDiv.style.display = "none"; // Hide the product
+            productDiv.style.display = "none";
         }
     });
 });
